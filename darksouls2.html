@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Souls II Wiki – Açılır Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffd700;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        button.accordion {
+            background: #222;
+            color: #ffd700;
+            cursor: pointer;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            margin-top: 8px;
+        }
+
+        button.accordion.active:after {
+            content: "\2212";
+            float: right;
+        }
+
+        button.accordion:after {
+            content: "\002B";
+            float: right;
+        }
+
+        div.panel {
+            padding: 0 15px;
+            display: none;
+            background: #1a1a1a;
+            overflow: hidden;
+            margin-bottom: 8px;
+            border-radius: 8px;
+        }
+
+        ul {
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .tooltip {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background: #333;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background: #222;
+        }
+
+        td {
+            background: #1a1a1a;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dark Souls II Wiki – Açılır Site</h1>
+        <p>Ölüm, sadece başlangıçtır...</p>
+    </header>
+    <main>
+
+        <button class="accordion">Genel</button>
+        <div class="panel">
+            <p><b>Dark Souls II</b>, FromSoftware tarafından geliştirilen bir aksiyon-rol yapma oyunudur. Oyuncular
+                <i>Drangleic</i> krallığında hayatta kalmaya çalışır. Zorlu boss savaşları, karakter geliştirme ve
+                karanlık atmosfer ile ünlüdür.</p>
+        </div>
+
+        <button class="accordion">Karakterler</button>
+        <div class="panel">
+            <ul>
+                <li class="tooltip">Warrior<span class="tooltiptext">Güçlü yakın dövüş, yüksek dayanıklılık.</span></li>
+                <li class="tooltip">Knight<span class="tooltiptext">Dengeli, yüksek can puanı ve sağlam zırh.</span>
+                </li>
+                <li class="tooltip">Sorcerer<span class="tooltiptext">Büyü odaklı, düşük fiziksel savunma.</span></li>
+                <li class="tooltip">Cleric<span class="tooltiptext">İyileştirme ve mucize büyülerinde uzman.</span></li>
+                <li class="tooltip">Swordsman<span class="tooltiptext">Çift kılıç, hızlı saldırılar.</span></li>
+                <li class="tooltip">Bandit<span class="tooltiptext">Okçu ve çevik dövüşçü.</span></li>
+            </ul>
+        </div>
+
+        <button class="accordion">Boss’lar</button>
+        <div class="panel">
+            <ul>
+                <li class="tooltip">The Pursuer<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/the-pursuer-ds2-wiki-guide.jpg"
+                            alt="The Pursuer"></span></li>
+                <li class="tooltip">The Rotten<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/the-rotten-ds2.jpg"
+                            alt="The Rotten"></span></li>
+                <li class="tooltip">Old Dragonslayer<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/old-dragonslayer-ds2.jpg"
+                            alt="Old Dragonslayer"></span></li>
+                <li class="tooltip">Nashandra<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/nashandra-ds2.jpg"
+                            alt="Nashandra"></span></li>
+                <li class="tooltip">Fume Knight<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/fume-knight-ds2.jpg"
+                            alt="Fume Knight"></span></li>
+            </ul>
+        </div>
+
+        <button class="accordion">Eşyalar</button>
+        <div class="panel">
+            <ul>
+                <li class="tooltip">Zweihander<span class="tooltiptext">Devasa kılıç, yüksek hasar, ağır
+                        saldıralar.</span></li>
+                <li class="tooltip">Moonlight Greatsword<span class="tooltiptext">Büyülü kılıç, özel büyü
+                        saldırıları.</span></li>
+                <li class="tooltip">Estus Flask<span class="tooltiptext">Oyuncuyu iyileştirir, sınırlı
+                        kullanılır.</span></li>
+                <li class="tooltip">Ring of Blades<span class="tooltiptext">Fiziksel saldırı artırır.</span></li>
+                <li class="tooltip">Havel’s Set<span class="tooltiptext">Yüksek savunma, ağır zırh seti.</span></li>
+            </ul>
+        </div>
+
+        <button class="accordion">NPC’ler</button>
+        <div class="panel">
+            <button class="accordion">Majula NPC’leri</button>
+            <div class="panel">
+                <ul>
+                    <li>Emerald Herald</li>
+                    <li>Blacksmith Lenigrast</li>
+                    <li>Sweet Shalquoir</li>
+                    <li>Merchant Hag Melentia</li>
+                    <li>Maughlin the Armourer</li>
+                </ul>
+            </div>
+            <button class="accordion">Diğer Önemli NPC’ler</button>
+            <div class="panel">
+                <ul>
+                    <li>Lonesome Gavlan</li>
+                    <li>Weaponsmith Ornifex</li>
+                    <li>Cromwell the Pardoner</li>
+                    <li>Titchy Gren</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="accordion">Haritalar</button>
+        <div class="panel">
+            <ul>
+                <li class="tooltip">Majula<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/majula-map-ds2.jpg"
+                            alt="Majula"></span></li>
+                <li class="tooltip">Forest of Fallen Giants<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/forest-map-ds2.jpg"
+                            alt="Forest of Fallen Giants"></span></li>
+                <li class="tooltip">Heide’s Tower of Flame<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/heide-map-ds2.jpg"
+                            alt="Heide"></span></li>
+                <li class="tooltip">Iron Keep<span class="tooltiptext"><img
+                            src="https://darksouls2.wiki.fextralife.com/file/Dark-Souls-2/ironkeep-map-ds2.jpg"
+                            alt="Iron Keep"></span></li>
+            </ul>
+        </div>
+
+        <button class="accordion">Covenant’lar</button>
+        <div class="panel">
+            <button class="accordion">Company of Champions</button>
+            <div class="panel">
+                <p>Düşman hasarını %50 artırır, yüksek riskli oynanış.</p>
+            </div>
+            <button class="accordion">Way of the Blue</button>
+            <div class="panel">
+                <p>Mavi Sentinel’lar, oyuncuyu korumak için çağrılır.</p>
+            </div>
+            <button class="accordion">Dragon Remnants</button>
+            <div class="panel">
+                <p>PvP görevleri ve özel ödüller sağlar.</p>
+            </div>
+            <button class="accordion">Rat King Covenant</button>
+            <div class="panel">
+                <p>Belirli bölgeleri koruma ve PvP stratejisi için.</p>
+            </div>
+        </div>
+
+        <button class="accordion">Build Hesaplayıcı</button>
+        <div class="panel">
+            <label for="classSelect">Karakter Sınıfı Seç:</label>
+            <select id="classSelect">
+                <option value="">Seçiniz</option>
+                <option value="warrior">Warrior</option>
+                <option value="knight">Knight</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="cleric">Cleric</option>
+                <option value="swordsman">Swordsman</option>
+                <option value="bandit">Bandit</option>
+            </select>
+            <table>
+                <thead>
+                    <tr>
+                        <th>HP</th>
+                        <th>Stamina</th>
+                        <th>Strength</th>
+                        <th>Dexterity</th>
+                        <th>Intelligence</th>
+                        <th>Faith</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="statsRow">
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <footer>
+        <p>© Fan yapımı Dark Souls II Wiki. Kaynak: <a href="https://darksouls2.wiki.fextralife.com"
+                target="_blank">Fextralife Wiki</a></p>
+    </footer>
+
+    <script>
+        // Accordion
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") { panel.style.display = "none"; } else { panel.style.display = "block"; }
+            });
+        }
+
+        // Build hesaplayıcı
+        const builds = {
+            warrior: { HP: 500, Stamina: 150, Strength: 20, Dexterity: 10, Intelligence: 8, Faith: 8 },
+            knight: { HP: 550, Stamina: 140, Strength: 18, Dexterity: 12, Intelligence: 8, Faith: 8 },
+            sorcerer: { HP: 350, Stamina: 120, Strength: 8, Dexterity: 12, Intelligence: 20, Faith: 10 },
+            cleric: { HP: 400, Stamina: 120, Strength: 10, Dexterity: 8, Intelligence: 12, Faith: 18 },
+            swordsman: { HP: 400, Stamina: 150, Strength: 12, Dexterity: 18, Intelligence: 8, Faith: 10 },
+            bandit: { HP: 380, Stamina: 160, Strength: 15, Dexterity: 15, Intelligence: 8, Faith: 10 }
+        };
+        document.getElementById("classSelect").addEventListener("change", function () {
+            const val = this.value;
+            const row = document.getElementById("statsRow");
+            if (builds[val]) { row.innerHTML = `<td>${builds[val].HP}</td><td>${builds[val].Stamina}</td><td>${builds[val].Strength}</td><td>${builds[val].Dexterity}</td><td>${builds[val].Intelligence}</td><td>${builds[val].Faith}</td>`; }
+            else { row.innerHTML = "<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>"; }
+        });
+    </script>
+
+</body>
+
+</html>
